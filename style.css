@@ -1,0 +1,1031 @@
+body {
+    font-family: Jost;
+    margin: 0 auto;
+}
+
+/* ***********Верхушка********** */
+.wrapper-top {
+    width: 100%;
+}
+
+.wrapper {
+    background: #141024;
+    width: 100%;
+}
+
+.header {
+    background-color: rgba(20, 16, 36, 0.1);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+.logo {
+    width: 100%;
+    height: 22px;
+    margin: 35px 50px;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.mob-menu-window {
+    display: none;
+}
+
+.menu li {
+    display: inline;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.ico-call {
+    display: none
+}
+
+.call-ico {
+    display: none;
+}
+
+.mob-menu {
+    display: none;
+}
+
+.number {
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 45px;
+}
+
+.robo {
+    margin-top: 220px;
+    width: 500px;
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.obzor {
+    max-width: 464px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background: #D52027;
+    width: 285px;
+    height: 73px;
+    line-height: 73px;
+    text-align: center;
+    border: 1px solid #D52027;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.girl {
+    width: 100%;
+    margin-top: 121px;
+    margin-bottom: -6px;
+}
+
+/* *********************************** */
+
+/* ***********Количество участников********** */
+.wrapperMidle {
+    padding-bottom: 100px;
+}
+
+.robo-school {
+    margin-bottom: 55px;
+    margin-top: 100px !important;
+    font-size: 18px;
+    width: 670px !important;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #141024;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+
+.quantity {
+    font-size: 58px;
+    color: #d52027;
+    font-weight: 600;
+    width: 5%;
+}
+
+.text {
+    font-size: 15px;
+    color: #141024b2;
+    font-weight: 400;
+    width: 220px;
+}
+
+/* *********************************** */
+
+/* ***********Описание курса********** */
+.wrapperGrey {
+    width: 100%;
+    padding-top: 95px;
+    background-color: #F9F9F9;
+    padding-bottom: 100px;
+}
+
+.title2 {
+    font-size: 50px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.names {
+    margin-top: 25px;
+}
+
+.name {
+    padding-top: 35px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.description {
+    margin-top: 15px;
+    width: 61%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(20, 16, 36, 0.7);
+}
+
+.info {
+    width: 17px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 71.9%;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 19px;
+    cursor: help;
+}
+
+.free-place {
+    display: none;
+    position: absolute;
+    top: -10%;
+    right: 32.5%;
+    width: 194px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.free-place.active {
+    display: block;
+}
+
+/* **************************** */
+
+/* **********Карусель********** */
+.blocked {
+    pointer-events: none;
+}
+
+.coachs {
+    width: 100%;
+    padding-bottom: 55px;
+}
+
+.title-coach {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.title-coach>h3 {
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+.coach-face {
+    width: 100%;
+}
+
+.fi {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.profession {
+    margin-top: 10px;
+    width: 72%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(20, 16, 36, 0.7);
+}
+
+.more {
+    width: 90px;
+    color: #D52027;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.owl-carousel .col-4 {
+    width: 100%;
+    margin-right: 0;
+}
+
+.wrapper-img {
+    position: relative;
+    padding-bottom: 139%;
+    overflow: hidden;
+}
+
+.wrapper-img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.owl-nav {
+    text-align: center;
+}
+
+.owl-nav button {
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: black;
+}
+
+.owl-nav button span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    line-height: 32px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 28px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/* ********************************* */
+
+/* ***********МОДАЛКА********** */
+.opacity {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 4;
+}
+
+.main-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    border: none;
+    max-width: 2150px;
+    font-family: Jost;
+    z-index: 5;
+}
+
+.main-window.active {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    border: none;
+    max-width: 2150px;
+    font-family: Jost;
+    z-index: 5;
+}
+
+.all-All {
+    width: 800px;
+    background-color: #fff;
+}
+
+.all {
+    display: flex;
+    position: relative;
+}
+
+.wrapper-img-window img {
+    width: 160px;
+    margin-right: 25px;
+    border-radius: 15px;
+}
+
+.info-window {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-couch {
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    color: #141024;
+    margin-bottom: 5px;
+}
+
+.profession-individual {
+    margin-top: 0;
+    font-size: 15px;
+    color: rgba(20, 16, 36, 0.7);
+    width: 145%;
+}
+
+.society {
+    margin-left: -2px;
+    margin-top: 5px;
+}
+
+.society img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: -5px
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.close button {
+    border: none;
+    font-size: 13px;
+    color: rgba(20, 16, 36, 0.7);
+    font-weight: 400;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sections {
+    margin-top: 20px;
+    margin-left: -12px !important;
+}
+
+.col-4.section.active {
+    color: #D52027;
+}
+
+.col-4.section:hover {
+    color: #141024;
+}
+
+.col-4.section {
+    width: 120px;
+    margin-right: 170px;
+    color: rgba(20, 16, 36, 0.2);
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.section:last-child {
+    margin: 0;
+}
+
+.hr {
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+    margin-top: 25px;
+}
+
+
+.education-wrapper.disable {
+    display: none;
+}
+
+.education-wrapper {
+    display: block;
+}
+
+.education {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.exp-wrap.active {
+    display: block;
+}
+
+.exp-wrap {
+    display: none;
+}
+
+.exp-wrap li {
+    padding-top: 13px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.award.active {
+    display: block;
+}
+
+.award {
+    display: none;
+}
+
+.award li {
+    padding-top: 13px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.info-coach {
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 235px;
+    margin-top: 10px;
+}
+
+.info-coach::-webkit-scrollbar {
+    width: 5px;
+}
+
+.info-coach::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.info-coach::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 5px;
+}
+
+.info-coach::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* **************************** */
+
+/* *************Пакеты********* */
+.packets {
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.row.packets-row {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.packs-title {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+.col-lg-4.price-pack {
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 30px;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    width: 31%;
+    transition: transform 1s, background-color 1s;
+}
+
+.price-pack:first-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.price-pack:last-child {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.price-pack:hover {
+    background-color: #141024;
+    transform: scale(1.03);
+    border: none;
+}
+
+.price-pack:hover .bag,
+.price-pack:hover .price,
+.price-pack:hover .owerview,
+.price-pack:hover .send {
+    color: #fff;
+}
+
+.bag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #141024;
+    margin-bottom: 50px;
+    transition: color .5s;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 50px;
+    color: #141024;
+    margin-bottom: 20px;
+    transition: color .5s;
+}
+
+.owerview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #141024;
+    transition: color .5s;
+}
+
+.send {
+    margin: 40px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background: #D52027;
+    width: 100%;
+    max-width: 305px;
+    height: 73px;
+    line-height: 73px;
+    text-align: center;
+    border: 1px solid #D52027;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* **************************** */
+
+/* ***********Форма************ */
+.form {
+    width: 100%;
+    padding-bottom: 80px;
+    background: #d42026 url("ROBO\ SCHOOL\ \(Copy\)/MaskGroup.png") repeat-x;
+    background-size: 1700px;
+    background-position: bottom;
+}
+
+.info-sale {
+    margin-top: 110px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    color: #fff;
+}
+
+.date-sale {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #fff
+}
+
+.application {
+    margin-top: 100px;
+}
+
+.application input {
+    display: block;
+    width: 500px;
+    height: 55px;
+    line-height: 55px;
+    border: none;
+    margin-top: 7px;
+    border-radius: 5px;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.send-form {
+    margin: 7px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background: #141024;
+    width: 510px;
+    height: 65px;
+    text-align: center;
+    line-height: 55px;
+    text-align: center;
+    border: 1px solid #141024;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.img-procent img {
+    width: 100%;
+}
+
+/* **************************** */
+
+/* **********Подвал************ */
+footer {
+    background-color: #141024;
+    width: 100%;
+    height: 150px;
+}
+
+.footer-logo {
+    width: 224px;
+    height: 22px;
+    margin: 55px 50px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    display: block;
+    width: auto;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 53px;
+}
+
+.footer-number {
+    display: inline-block;
+    float: right;
+    margin-top: -70px;
+    margin-right: 45px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* **************************** */
+/* **********Адаптив************ */
+
+@media (max-width : 700px) {
+
+    /* ******************Шапка*******************/
+    .header {
+        position: static;
+        margin-top: -15px;
+    }
+
+    .logo {
+        margin: 35px 5px;
+        width: 100%;
+        max-width: 140px;
+    }
+
+    .call-ico {
+        display: block;
+    }
+
+    .ico-call {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .mob-menu {
+        display: block;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: -50px;
+    }
+
+    .line {
+        position: absolute;
+        background: #fff;
+        width: 73%;
+        height: 2px;
+        top: 35%;
+        border-radius: 70%;
+    }
+
+    .line:nth-child(2) {
+        top: 48.6%;
+    }
+
+    .line:nth-child(3) {
+        width: 50%;
+        top: 62.6%;
+        left: 14%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mob {
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-mob a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .menu-mob li {
+        margin-bottom: 25px;
+    }
+
+    .mob-menu-window.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #141024;
+        z-index: 2;
+    }
+
+    .inside-mob-window {
+        position: absolute;
+        display: flex;
+        top: 0;
+        right: 2%;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .robo {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .obzor {
+        max-width: 464px;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+    }
+
+
+    .girl-adaptive {
+        width: 100%;
+    }
+
+    .button {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    /* **************************** */
+    /* ***********Количество участников********** */
+
+    .wrapperMidle {
+        padding-bottom: 50px;
+    }
+
+    .quan-adaptive {
+        flex-direction: column;
+        text-align: -webkit-center;
+    }
+
+    .quantity {
+        margin-bottom: 30px;
+    }
+
+
+    /* ***********О курсах********** */
+
+    .wrapperGrey {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .title2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .names {
+        text-align: -webkit-center;
+    }
+
+    .description {
+        width: 72%;
+    }
+
+    .info {
+        top: 15%;
+        right: 25%;
+    }
+
+    .free-place {
+        right: 20.5%;
+    }
+
+    /* **************************************** */
+
+
+    /* ****************Тренера *******************/
+
+    .title-coach>h3 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .wrapper-img {
+        margin: 35px;
+    }
+
+    .coach-face {
+        width: 94%;
+    }
+
+    .fi,
+    .profession,
+    .more {
+        margin-left: 35px;
+        width: 73%;
+    }
+
+    .coachs {
+        padding-bottom: 0;
+    }
+
+    /* **************************************** */
+
+
+    /* ****************Цены*******************/
+
+    .packs-title {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .packs-title>h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .row.price-adeptive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .col-12.price-pack {
+        width: 85%;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+
+    .send {
+        margin: 40px auto;
+    }
+
+    /* **************************************** */
+
+    /* ****************Форма*******************/
+
+    .form {
+        background: #d42026;
+        padding-bottom: 40px;
+    }
+
+    .application {
+        margin-top: 40px;
+    }
+
+    .info-sale {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .date-sale {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .application input {
+        width: 300px;
+    }
+
+    .send-form {
+        width: 310px;
+    }
+
+    /* **************************************** */
+
+    /* ****************Подвал*******************/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 180px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 0;
+        margin: 40px auto;
+    }
+
+    .footer-number {
+        margin-top: -50px;
+        margin-right: 10px;
+        font-size: 20px;
+        position: absolute;
+        top: 73%;
+    }
+
+    .copyright {
+        margin-right: 60px;
+        margin-top: 15px;
+    }
+}

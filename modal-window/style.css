@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(216, 235, 235);
+}
+
+.main-window {
+    position: relative;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    border: none;
+    width: 800px;
+    font-family: Jost;
+    margin: 0 auto;
+}
+
+.all {
+    display: flex;
+}
+
+.wrapper-img {
+    width: 160px;
+    margin-right: 25px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-couch {
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    color: #141024;
+    margin-bottom: 5px;
+}
+
+.profession {
+    margin-top: 4px;
+    font-size: 14px;
+    color: rgba(20, 16, 36, 0.7);
+}
+
+.society {
+    margin-left: -2px;
+    margin-top: 5px;
+}
+
+.society img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: -5px
+}
+
+.close {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+}
+
+.close button {
+    border: none;
+    font-size: 13px;
+    color: rgba(20, 16, 36, 0.7);
+    font-weight: 400;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sections {
+    margin-top: 20px;
+    margin-left: -12px !important;
+}
+
+.col-4.section {
+    width: 120px;
+    margin-right: 170px;
+    color: #141024;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.section:last-child {
+    cursor: inherit;
+    margin: 0;
+}
+
+.hr {
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+    margin-top: 25px;
+}
+
+.education-wrapper {
+    display: block;
+}
+
+.education {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.exp-wrap {
+    display: none;
+}
+
+.exp-wrap li {
+    padding-top: 13px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.info-coach {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 235px;
+    margin-top: 10px;
+}
+
+.info-coach::-webkit-scrollbar {
+    width: 5px;
+}
+
+.info-coach::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.info-coach::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 5px;
+}
+
+.info-coach::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

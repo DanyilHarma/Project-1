@@ -1,0 +1,91 @@
+body {
+    font-family: Jost;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    justify-content: space-between;
+    width: 1690px;
+    height: 824px;
+    background: #141024;
+}
+
+.logo {
+    width: 224px;
+    height: 22px;
+    margin: 35px 50px;
+}
+
+.menu {
+    position: absolute;
+    top: 16px;
+    left: 650px;
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.number {
+    display: inline;
+    position: absolute;
+    top: 23px;
+    right: 92px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.robo {
+    position: relative;
+    top: 210px;
+    left: 335px;
+    width: 500px;
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.obzor {
+    position: relative;
+    top: 210px;
+    left: 338px;
+    width: 464px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.button {
+    position: relative;
+    top: 240px;
+    left: 335px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    background: #D52027;
+    width: 285px;
+    height: 73px;
+    line-height: 73px;
+    text-align: center;
+    border: 1px solid #D52027;
+    border-radius: 5px;
+}
+
+.girl {
+    position: relative;
+    width: 521px;
+    top: -150px;
+    left: 845px;
+}
