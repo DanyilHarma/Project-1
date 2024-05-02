@@ -115,9 +115,10 @@ $(".close-mob-menu, .about, .treners, .price-menu").click(function () {
 
 /////////////////////Модалка/////////////////////////////////
 
-let initial = true;
+
 
 $(document).ready(function () {
+    var isAccordionInitialized = false;
     setAccordion();
 
     $(window).resize(function () {
@@ -126,7 +127,7 @@ $(document).ready(function () {
 })
 
 function setAccordion() {
-    if ($(window).width() > 600 && !$(".info-coach").hasClass("ui-accordion")) {
+    if ($(window).width() <= 940 && !$(".info-coach").hasClass("ui-accordion")) {
         $(".info-coach").each(function () {
             if (!$(this).hasClass("ui-accordion")) {
                 $(this).accordion({
@@ -134,12 +135,13 @@ function setAccordion() {
                     active: false
                 })
             }
-
+            isAccordionInitialized = true;
         });
     } else {
         $(".info-coach").each(function () {
             if ($(this).hasClass("ui-accordion")) {
                 $(this).accordion("destroy");
+                isAccordionInitialized = false;
             }
         });
     }
