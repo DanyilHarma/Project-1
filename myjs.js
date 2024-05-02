@@ -101,8 +101,8 @@ $(".close").click(function () {//////////закрытие окна
     setDefaultTab();
 })
 
-
 ///////////////////////Адаптив///////////////////////////////
+//////////////////////Меню///////////////////////////////////
 
 $(".mob-menu").click(function () {
     $(".mob-menu-window").addClass("active");
@@ -112,3 +112,37 @@ $(".close-mob-menu, .about, .treners, .price-menu").click(function () {
     $(".mob-menu-window").removeClass("active");
 
 })
+
+/////////////////////Модалка/////////////////////////////////
+
+let initial = true;
+
+$(document).ready(function () {
+    setAccordion();
+
+    $(window).resize(function () {
+        setAccordion();
+    })
+})
+
+function setAccordion() {
+    if ($(window).width() > 600 && !$(".info-coach").hasClass("ui-accordion")) {
+        $(".info-coach").each(function () {
+            if (!$(this).hasClass("ui-accordion")) {
+                $(this).accordion({
+                    collapsible: true,
+                    active: false
+                })
+            }
+
+        });
+    } else {
+        $(".info-coach").each(function () {
+            if ($(this).hasClass("ui-accordion")) {
+                $(this).accordion("destroy");
+            }
+        });
+    }
+}
+
+
