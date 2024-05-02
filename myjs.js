@@ -101,14 +101,65 @@ $(".close").click(function () {//////////закрытие окна
     setDefaultTab();
 })
 
+<<<<<<< Updated upstream
 
 ///////////////////////Адаптив///////////////////////////////
+=======
+///////////////////////АДАПТИВ///////////////////////////////
+
+//////////////////////Меню///////////////////////////////////
+>>>>>>> Stashed changes
 
 $(".mob-menu").click(function () {
     $(".mob-menu-window").addClass("active");
 })
 
-$(".close-mob-menu, .about, .treners, .price-menu").click(function () {
+$(".inside-mob-window, .about, .treners, .price-menu").click(function () {
     $(".mob-menu-window").removeClass("active");
 
+<<<<<<< Updated upstream
 })
+=======
+})
+
+/////////////////////Модалка/////////////////////////////////
+
+$(".close-adap").click(function () {
+    $(".main-window").removeClass("active").fadeOut();
+    $(".opacity").fadeOut();
+    unblockCarousel();
+    setDefaultTab();
+})
+
+$(document).ready(function () {
+    var isAccordionInitialized = false;
+    setAccordion();
+
+    $(window).resize(function () {
+        setAccordion();
+    })
+})
+
+function setAccordion() {
+    if ($(window).width() <= 940 && !$(".info-coach").hasClass("ui-accordion")) {
+        $(".info-coach").each(function () {
+            if (!$(this).hasClass("ui-accordion")) {
+                $(this).accordion({
+                    collapsible: true,
+                    active: false
+                })
+            }
+            isAccordionInitialized = true;
+        });
+    } else {
+        $(".info-coach").each(function () {
+            if ($(this).hasClass("ui-accordion")) {
+                $(this).accordion("destroy");
+                isAccordionInitialized = false;
+            }
+        });
+    }
+}
+
+
+>>>>>>> Stashed changes
