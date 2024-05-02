@@ -662,7 +662,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     background: #141024;
-    width: 510px;
+    width: 100%;
+    max-width: 510px;
     height: 65px;
     text-align: center;
     line-height: 55px;
@@ -909,9 +910,11 @@ footer {
     /* ****************Тренера *******************/
 
     .title-coach>h3 {
-        font-size: 32px;
+        font-size: 27px;
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 0;
+        line-height: 26px;
+        margin-top: 40px;
     }
 
     .wrapper-img {
@@ -991,11 +994,13 @@ footer {
     }
 
     .application input {
-        width: 300px;
+        width: 100%;
+        max-width: 290px;
     }
 
     .send-form {
-        width: 310px;
+        width: 100%;
+        max-width: 300px;
     }
 
     /* **************************************** */

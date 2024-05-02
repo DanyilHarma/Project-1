@@ -49,7 +49,7 @@ $(".more").click(function (event) {////////////////смена имени,фам�
     blockCarousel();
     let name = $(this).siblings(".fi").text();
     let profession = $(this).siblings(".profession").text();
-    let image = $(this).closest(".col").find(".wrapper-img img").attr("src");
+    let image = $(this).closest(".coachs").find(".wrapper-img img").attr("src");
     fillModal(image, name, profession);
 });
 
