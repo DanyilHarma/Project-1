@@ -101,21 +101,47 @@ $(".close").click(function () {//////////закрытие окна
     setDefaultTab();
 })
 
+<<<<<<< HEAD
 ///////////////////////Адаптив///////////////////////////////
 //////////////////////Меню///////////////////////////////////
+=======
+<<<<<<< Updated upstream
+
+///////////////////////Адаптив///////////////////////////////
+=======
+///////////////////////АДАПТИВ///////////////////////////////
+
+//////////////////////Меню///////////////////////////////////
+>>>>>>> Stashed changes
+>>>>>>> second
 
 $(".mob-menu").click(function () {
     $(".mob-menu-window").addClass("active");
 })
 
-$(".close-mob-menu, .about, .treners, .price-menu").click(function () {
+$(".inside-mob-window, .about, .treners, .price-menu").click(function () {
     $(".mob-menu-window").removeClass("active");
 
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+})
+=======
+>>>>>>> second
 })
 
 /////////////////////Модалка/////////////////////////////////
 
+<<<<<<< HEAD
 
+=======
+$(".close-adap").click(function () {
+    $(".main-window").removeClass("active").fadeOut();
+    $(".opacity").fadeOut();
+    unblockCarousel();
+    setDefaultTab();
+})
+>>>>>>> second
 
 $(document).ready(function () {
     var isAccordionInitialized = false;
@@ -148,3 +174,7 @@ function setAccordion() {
 }
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> second
