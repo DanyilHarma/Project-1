@@ -101,19 +101,12 @@ $(".close").click(function () {//////////закрытие окна
     setDefaultTab();
 })
 
-<<<<<<< HEAD
-///////////////////////Адаптив///////////////////////////////
-//////////////////////Меню///////////////////////////////////
-=======
-<<<<<<< Updated upstream
 
-///////////////////////Адаптив///////////////////////////////
-=======
+
 ///////////////////////АДАПТИВ///////////////////////////////
 
 //////////////////////Меню///////////////////////////////////
->>>>>>> Stashed changes
->>>>>>> second
+
 
 $(".mob-menu").click(function () {
     $(".mob-menu-window").addClass("active");
@@ -122,59 +115,49 @@ $(".mob-menu").click(function () {
 $(".inside-mob-window, .about, .treners, .price-menu").click(function () {
     $(".mob-menu-window").removeClass("active");
 
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-})
-=======
->>>>>>> second
-})
 
-/////////////////////Модалка/////////////////////////////////
 
-<<<<<<< HEAD
+    /////////////////////Модалка/////////////////////////////////
 
-=======
-$(".close-adap").click(function () {
-    $(".main-window").removeClass("active").fadeOut();
-    $(".opacity").fadeOut();
-    unblockCarousel();
-    setDefaultTab();
-})
->>>>>>> second
 
-$(document).ready(function () {
-    var isAccordionInitialized = false;
-    setAccordion();
 
-    $(window).resize(function () {
-        setAccordion();
+    $(".close-adap").click(function () {
+        $(".main-window").removeClass("active").fadeOut();
+        $(".opacity").fadeOut();
+        unblockCarousel();
+        setDefaultTab();
     })
+
+
+    $(document).ready(function () {
+        var isAccordionInitialized = false;
+        setAccordion();
+
+        $(window).resize(function () {
+            setAccordion();
+        })
+    })
+
+    function setAccordion() {
+        if ($(window).width() <= 940 && !$(".info-coach").hasClass("ui-accordion")) {
+            $(".info-coach").each(function () {
+                if (!$(this).hasClass("ui-accordion")) {
+                    $(this).accordion({
+                        collapsible: true,
+                        active: false
+                    })
+                }
+                isAccordionInitialized = true;
+            });
+        } else {
+            $(".info-coach").each(function () {
+                if ($(this).hasClass("ui-accordion")) {
+                    $(this).accordion("destroy");
+                    isAccordionInitialized = false;
+                }
+            });
+        }
+    }
 })
 
-function setAccordion() {
-    if ($(window).width() <= 940 && !$(".info-coach").hasClass("ui-accordion")) {
-        $(".info-coach").each(function () {
-            if (!$(this).hasClass("ui-accordion")) {
-                $(this).accordion({
-                    collapsible: true,
-                    active: false
-                })
-            }
-            isAccordionInitialized = true;
-        });
-    } else {
-        $(".info-coach").each(function () {
-            if ($(this).hasClass("ui-accordion")) {
-                $(this).accordion("destroy");
-                isAccordionInitialized = false;
-            }
-        });
-    }
-}
 
-
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
->>>>>>> second
