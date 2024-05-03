@@ -107,7 +107,6 @@ $(".close").click(function () {//////////закрытие окна
 
 //////////////////////Меню///////////////////////////////////
 
-
 $(".mob-menu").click(function () {
     $(".mob-menu-window").addClass("active");
 })

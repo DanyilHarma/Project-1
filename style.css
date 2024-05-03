@@ -177,12 +177,17 @@ body {
     color: rgba(20, 16, 36, 0.7);
 }
 
+.relative {
+    position: relative;
+    display: inline;
+}
+
 .info {
     width: 17px;
     text-align: center;
     position: absolute;
-    top: 20%;
-    right: 71.9%;
+    top: -27%;
+    right: -20.1%;
     font-size: 12px;
     font-weight: 400;
     background-color: #d9d9d9;
@@ -194,8 +199,8 @@ body {
 .free-place {
     display: none;
     position: absolute;
-    top: -10%;
-    right: 32.5%;
+    top: -161%;
+    right: -201.1%;
     width: 194px;
     height: 37px;
     text-align: center;
@@ -539,16 +544,10 @@ body {
     margin-bottom: 80px;
 }
 
-.row .price-adeptive {
+.row.price-adeptive {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-}
-
-.col-12.price-pack {
-    width: 31%;
-    margin-bottom: 25px;
-    margin-left: 0;
 }
 
 .col-lg-4.price-pack {
@@ -624,7 +623,7 @@ body {
     font-weight: 400;
     background: #D52027;
     width: 100%;
-    max-width: 305px;
+    /* max-width: 305px; */
     height: 73px;
     line-height: 73px;
     text-align: center;
@@ -639,8 +638,10 @@ body {
 .form {
     width: 100%;
     padding-bottom: 80px;
-    background: #d42026 url("ROBO\ SCHOOL\ \(Copy\)/MaskGroup.png") repeat-x;
-    background-size: 1700px;
+    background-color: #D52027;
+    background-image: url(ROBO\ SCHOOL\ \(Copy\)/MaskGroup.png);
+    background-size: 1800px;
+    background-repeat: no-repeat;
     background-position: bottom;
 }
 
@@ -734,7 +735,7 @@ footer {
 /* **************************** */
 /* **********Адаптив************ */
 
-@media (max-width : 320px) {
+@media (max-width : 480px) {
 
     /* ******************Шапка*******************/
     .header {
@@ -914,13 +915,11 @@ footer {
         width: 72%;
     }
 
-    .info {
-        top: 15%;
-        right: 25%;
-    }
+
 
     .free-place {
-        right: 20.5%;
+        right: -50%;
+        top: -50px;
     }
 
     /* **************************************** */
@@ -989,146 +988,147 @@ footer {
         font-family: Jost;
         z-index: 5;
     }
-}
 
-.all-All {
-    width: 250px;
-}
 
-.info-couch {
-    font-size: 16px;
-}
+    .all-All {
+        width: 250px;
+    }
 
-.profession-individual {
-    font-size: 10px;
-    font-weight: 600;
-}
+    .info-couch {
+        font-size: 16px;
+    }
 
-.wrapper-img-window img {
-    width: 60px;
-    margin-right: 10px;
-}
+    .profession-individual {
+        font-size: 10px;
+        font-weight: 600;
+    }
 
-.col-4.section {
-    width: 100%;
-    margin-right: 170px;
-    color: rgba(20, 16, 36, 0.2);
-    font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: .5s;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    background: #D52027;
-}
+    .wrapper-img-window img {
+        width: 60px;
+        margin-right: 10px;
+    }
 
-.col-4 .second {
-    width: 100%;
-    padding: 0;
-}
+    .col-4.section {
+        width: 100%;
+        margin-right: 170px;
+        color: rgba(20, 16, 36, 0.2);
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: .5s;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        background: #D52027;
+    }
 
-.col-4.section.active {
-    color: white;
-}
+    .col-4 .second {
+        width: 100%;
+        padding: 0;
+    }
 
-.col-4.section:hover {
-    color: white;
-}
+    .col-4.section.active {
+        color: white;
+    }
 
-/* **************************************** */
+    .col-4.section:hover {
+        color: white;
+    }
 
-/* ****************Цены*******************/
+    /* **************************************** */
 
-.packs-title {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+    /* ****************Цены*******************/
 
-.packs-title>h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 32px;
-    text-align: center;
-}
+    .packs-title {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 
-.row.price-adeptive {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    .packs-title>h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 32px;
+        text-align: center;
+    }
 
-.col-12.price-pack {
-    width: 100%;
-    margin-bottom: 25px;
-    margin-left: 0;
-}
+    .row.price-adeptive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.send {
-    margin: 40px auto;
-}
+    .col-12.price-pack {
+        width: 100%;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
 
-/* **************************************** */
+    .send {
+        margin: 40px auto;
+    }
 
-/* ****************Форма*******************/
+    /* **************************************** */
 
-.form {
-    background: #d42026;
-    padding-bottom: 40px;
-}
+    /* ****************Форма*******************/
 
-.application {
-    margin-top: 40px;
-}
+    .form {
+        background-color: #d42026;
+        padding-bottom: 40px;
+        background-image: none;
+    }
 
-.info-sale {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 30px;
-}
+    .application {
+        margin-top: 40px;
+    }
 
-.date-sale {
-    font-size: 20px;
-    text-align: center;
-}
+    .info-sale {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
 
-.application input {
-    width: 100%;
-    max-width: 310px;
-}
+    .date-sale {
+        font-size: 20px;
+        text-align: center;
+    }
 
-.send-form {
-    width: 100%;
-    max-width: 310px;
-}
+    .application input {
+        width: 100%;
+    }
 
-/* **************************************** */
+    .send-form {
+        width: 100%;
+    }
 
-/* ****************Подвал*******************/
+    /* **************************************** */
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    height: 180px;
-}
+    /* ****************Подвал*******************/
 
-.footer-logo {
-    width: 100%;
-    margin-bottom: 0;
-    margin: 40px auto;
-}
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 180px;
+    }
 
-.footer-number {
-    margin-top: -50px;
-    margin-right: 10px;
-    font-size: 20px;
-    position: absolute;
-    top: 73%;
-}
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 0;
+        margin: 40px auto;
+    }
 
-.copyright {
-    margin-right: 60px;
-    margin-top: 15px;
+    .footer-number {
+        margin-top: -50px;
+        margin-right: 10px;
+        font-size: 20px;
+        position: absolute;
+        top: 73%;
+    }
+
+    .copyright {
+        margin-right: 60px;
+        margin-top: 15px;
+    }
+
 }
