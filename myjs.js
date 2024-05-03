@@ -36,7 +36,7 @@ function unblockCarousel() {
 
 ///////////Создание функции для вставки//////////
 function fillModal(image, name, profession) {
-    $(".wrapper-img-window img").attr("src", image);
+    $(".wrapper-img-window ").attr("src", image);
     $(".info-couch").text(name);
     $(".profession-individual").text(profession);
     $(".main-window").addClass("active");
@@ -57,7 +57,7 @@ $(document).on("click", ".coachs .more", function () {///////////смена бл
     $(".info-coach").hide();
     let coach = $(this).attr("data-coach")
     $('.main-window [data-coach="' + coach + '"]').parent().show();
-})
+});
 
 function setDefaultTab() {///////////// установка первой вкладки по-умолчанию
     $(".education-wrapper").addClass("active").removeClass("disable");
@@ -73,7 +73,7 @@ $(".first").click(function () {///////////переход между кнопка
     $(".first").addClass("active");
     $(".second").removeClass("active");
     $(".thirst").removeClass("active");
-})
+});
 
 $(".second").click(function () {///////////переход между кнопками
     $(".exp-wrap").addClass("active");
@@ -82,7 +82,7 @@ $(".second").click(function () {///////////переход между кнопк�
     $(".second").addClass("active");
     $(".first").removeClass("active");
     $(".thirst").removeClass("active");
-})
+});
 
 $(".thirst").click(function () {///////////переход между кнопками
     $(".award").addClass("active");
@@ -91,15 +91,14 @@ $(".thirst").click(function () {///////////переход между кнопк�
     $(".thirst").addClass("active");
     $(".first").removeClass("active");
     $(".second").removeClass("active");
-})
-
+});
 
 $(".close").click(function () {//////////закрытие окна
     $(".main-window").removeClass("active").fadeOut();
     $(".opacity").fadeOut();
     unblockCarousel();
     setDefaultTab();
-})
+});
 
 
 
@@ -118,7 +117,7 @@ $(".inside-mob-window, .about, .treners, .price-menu").click(function () {
 
     /////////////////////Модалка/////////////////////////////////
 
-    $(".close-adap").click(function () {
+    $(".close-adap, .close-adap img").click(function () {
         $(".main-window").removeClass("active").fadeOut();
         $(".opacity").fadeOut();
         unblockCarousel();
