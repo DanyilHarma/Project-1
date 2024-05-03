@@ -129,7 +129,7 @@ body {
 
 
 .quantity {
-    font-size: 58px;
+    font-size: 70px;
     color: #d52027;
     font-weight: 600;
     width: 5%;
@@ -616,20 +616,24 @@ body {
     transition: color .5s;
 }
 
+
 .send {
-    margin: 40px 20px;
+    margin-top: 79px;
     color: #fff;
     font-size: 16px;
     font-weight: 400;
     background: #D52027;
     width: 100%;
-    /* max-width: 305px; */
     height: 73px;
     line-height: 73px;
     text-align: center;
     border: 1px solid #D52027;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.send:first-child {
+    margin-top: 52px;
 }
 
 /* **************************** */
@@ -764,8 +768,11 @@ footer {
         margin-right: 10px;
     }
 
+    .icons {
+        display: flex;
+    }
+
     .mob-menu {
-        display: block;
         display: flex;
         position: relative;
         justify-content: center;
@@ -774,7 +781,7 @@ footer {
         background-color: #141024;
         box-shadow: white 0px -1px 4px 0px;
         border-radius: 10px;
-        margin-right: -50px;
+        margin-right: 10px;
     }
 
     .line {
@@ -1045,9 +1052,9 @@ footer {
     }
 
     .packs-title>h3 {
-        margin-top: 0;
+        margin-top: 15px;
         margin-bottom: 0;
-        font-size: 32px;
+        font-size: 40px;
         text-align: center;
     }
 
