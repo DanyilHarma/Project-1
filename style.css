@@ -91,7 +91,8 @@ body {
     font-size: 18px;
     font-weight: 400;
     background: #D52027;
-    width: 285px;
+    width: 100%;
+    max-width: 300px;
     height: 73px;
     line-height: 73px;
     text-align: center;
@@ -623,7 +624,7 @@ body {
     font-weight: 400;
     background: #D52027;
     width: 100%;
-    /* max-width: 305px; */
+    margin-top: 38px;
     height: 73px;
     line-height: 73px;
     text-align: center;
@@ -735,7 +736,7 @@ footer {
 /* **************************** */
 /* **********Адаптив************ */
 
-@media (max-width : 480px) {
+@media (max-width : 540px) {
 
     /* ******************Шапка*******************/
     .header {
@@ -944,7 +945,13 @@ footer {
         width: 94%;
     }
 
-    .fi,
+    .fi {
+        font-size: 19px;
+        margin-left: 35px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
     .profession,
     .more {
         margin-left: 35px;
@@ -1133,5 +1140,226 @@ footer {
         margin-right: 60px;
         margin-top: 15px;
     }
+
+}
+
+@media(min-width: 540px) and (max-width:760px) {
+    .logo {
+        width: 100%;
+        height: 22px;
+        margin: 35px 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .call-ico {
+        display: block;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .ico-call {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .mob-menu {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .line {
+        position: absolute;
+        background: #fff;
+        width: 73%;
+        height: 2px;
+        top: 35%;
+        border-radius: 70%;
+    }
+
+    .line:nth-child(2) {
+        top: 48.6%;
+    }
+
+    .line:nth-child(3) {
+        width: 50%;
+        top: 62.6%;
+        left: 14%;
+    }
+}
+
+@media (min-width : 761px) and (max-width: 1100px) {
+
+    /* ******************Шапка*******************/
+    .header {
+        position: static;
+        margin-top: -15px;
+    }
+
+    .logo {
+        margin: 35px 5px;
+        width: 100%;
+        max-width: 140px;
+    }
+
+    .call-ico {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .ico-call {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .mob-menu {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .line {
+        position: absolute;
+        background: #fff;
+        width: 73%;
+        height: 2px;
+        top: 35%;
+        border-radius: 70%;
+    }
+
+    .line:nth-child(2) {
+        top: 48.6%;
+    }
+
+    .line:nth-child(3) {
+        width: 50%;
+        top: 62.6%;
+        left: 14%;
+    }
+
+    .menu {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .menu-mob {
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-mob a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .menu-mob li {
+        margin-bottom: 25px;
+    }
+
+    .mob-menu-window.active {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #141024;
+        z-index: 2;
+    }
+
+    .inside-mob-window {
+        position: absolute;
+        display: flex;
+        top: 2%;
+        right: 2%;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+    }
+
+    .number {
+        display: block;
+        font-size: 25px;
+    }
+
+    .robo {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .obzor {
+        max-width: 464px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+        margin: 20px auto;
+    }
+
+
+    .girl-adaptive {
+        width: 102%;
+    }
+
+    .button {
+        margin: auto;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 498px;
+    }
+
+    /* **************************** */
 
 }
