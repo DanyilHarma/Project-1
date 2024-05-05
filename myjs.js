@@ -112,50 +112,68 @@ $(".mob-menu").click(function () {
 
 $(".inside-mob-window, .about, .treners, .price-menu").click(function () {
     $(".mob-menu-window").removeClass("active");
-
-
-
-    /////////////////////Модалка/////////////////////////////////
-
-
-
-    $(".close-adap, .close-adap img").click(function () {
-        $(".main-window").removeClass("active").fadeOut();
-        $(".opacity").fadeOut();
-        unblockCarousel();
-        setDefaultTab();
-    })
-
-
-    $(document).ready(function () {
-        var isAccordionInitialized = false;
-        setAccordion();
-
-        $(window).resize(function () {
-            setAccordion();
-        })
-    })
-
-    function setAccordion() {
-        if ($(window).width() <= 940 && !$(".info-coach").hasClass("ui-accordion")) {
-            $(".info-coach").each(function () {
-                if (!$(this).hasClass("ui-accordion")) {
-                    $(this).accordion({
-                        collapsible: true,
-                        active: false
-                    })
-                }
-                isAccordionInitialized = true;
-            });
-        } else {
-            $(".info-coach").each(function () {
-                if ($(this).hasClass("ui-accordion")) {
-                    $(this).accordion("destroy");
-                    isAccordionInitialized = false;
-                }
-            });
-        }
-    }
 })
 
+
+/////////////////////Модалка/////////////////////////////////
+
+
+
+$(".close-adap img").click(function () {
+    $(".main-window").removeClass("active").fadeOut();
+    $(".opacity").fadeOut();
+    $(".info-coach").removeClass("active");
+    $(".education-wrapper,.exp-wrap,.award").removeClass("active");
+    $("#expe,#awar,#ed").css("display", "block");
+    $(".small-window select").css("margin-bottom", "10px");
+    $(".main-window").css("height", "345px");
+    unblockCarousel();
+})
+
+
+$(document).ready(function () {
+    $("#ed").click(function (e) {
+        e.preventDefault();
+        $(".education-wrapper").toggleClass("active");
+        if ($(".education-wrapper").hasClass("active")) {
+            $(".main-window.active").css("height", "100%");
+            $("#expe,#awar").css("display", "none");
+            $(".info-coach").css("height", "250px");
+            $(".small-window select").css("margin-bottom", "-12px");
+        } else {
+            $(".main-window.active").css("height", "345px");
+            $("#expe,#awar").css("display", "block");
+            $(".small-window select").css("margin-bottom", "10px");
+        }
+    });
+    $("#expe").click(function (e) {
+        e.preventDefault();
+        $(".exp-wrap").toggleClass("active");
+        if ($(".exp-wrap").hasClass("active")) {
+            $(".main-window.active").css("height", "100%");
+            $("#ed,#awar").css("display", "none");
+            $(".info-coach").css("height", "250px");
+            $(".small-window select").css("margin-bottom", "-12px");
+        } else {
+            $(".main-window.active").css("height", "345px");
+            $("#ed,#awar").css("display", "block");
+            $(".small-window select").css("margin-bottom", "10px");
+        }
+    });
+    $("#awar").click(function (e) {
+        e.preventDefault();
+        $(".award").toggleClass("active");
+        if ($(".award").hasClass("active")) {
+            $(".main-window.active").css("height", "100%");
+            $("#ed,#expe").css("display", "none");
+            $(".info-coach").css("height", "250px");
+            $(".small-window select").css("margin-bottom", "-12px");
+        } else {
+            $(".main-window.active").css("height", "345px");
+            $("#ed,#expe").css("display", "block");
+            $(".small-window select").css("margin-bottom", "10px");
+        }
+    })
+
+})
 
