@@ -624,13 +624,21 @@ body {
     font-weight: 400;
     background: #D52027;
     width: 100%;
-    margin-top: 38px;
+    margin-top: 66px;
     height: 73px;
     line-height: 73px;
     text-align: center;
     border: 1px solid #D52027;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.price-pack:first-child .send {
+    margin-top: 38px;
+}
+
+.price-pack:last-child .send {
+    margin-top: 65px;
 }
 
 /* **************************** */
@@ -1276,7 +1284,7 @@ footer {
     }
 
     .robo {
-        margin-top: 90px;
+        margin-top: 35px;
         width: 100%;
         text-align: center;
         font-size: 40px;
@@ -1291,6 +1299,10 @@ footer {
         font-weight: 400;
         color: #fff;
         margin: 0 auto;
+    }
+
+    .girl-adaptive {
+        width: 100%;
     }
 
     /* **************************** */
@@ -1557,7 +1569,7 @@ footer {
 
 }
 
-@media (min-width: 993px) and (max-width: 1100px) {
+@media (min-width: 990px) and (max-width: 1100px) {
     /* *************О курсах*************** */
 
     .description {
@@ -1566,14 +1578,34 @@ footer {
 
     /* **************************** */
     /* *************Пакеты*************** */
-    .col-12.price-pack {
-        margin-right: 22px;
-        margin-left: 7px;
-        width: 30%;
+
+
+    /* **************************** */
+    /* *************Форма*************** */
+
+    .application input {
+        width: 100%;
     }
 
-    .send:last-child {
-        margin-top: 39px;
+    .send-form {
+        width: 100%;
+    }
+}
+
+@media (min-width:991px) and (max-width: 1099px) {
+    .col-12.price-pack {
+        margin-top: 40px;
+        margin-right: 22px;
+        margin-left: 7px;
+        width: 100%;
+    }
+
+    .price-pack:first-child .send {
+        margin-top: 38px;
+    }
+
+    .price-pack:last-child .send {
+        margin-top: 38px;
     }
 }
 
@@ -1631,7 +1663,11 @@ footer {
         margin-left: 0;
     }
 
-    .send:last-child {
+    .price-pack:first-child .send {
+        margin-top: 38px;
+    }
+
+    .price-pack:last-child .send {
         margin-top: 39px;
     }
 
@@ -1681,5 +1717,16 @@ footer {
         border-radius: 5px;
         cursor: pointer;
         margin-left: 30px;
+    }
+
+
+    /* **************************** */
+    /* *************Пакеты*************** */
+    .price-pack:first-child .send {
+        margin-top: 38px;
+    }
+
+    .price-pack:last-child .send {
+        margin-top: 65px;
     }
 }
