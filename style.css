@@ -91,7 +91,8 @@ body {
     font-size: 18px;
     font-weight: 400;
     background: #D52027;
-    width: 285px;
+    width: 100%;
+    max-width: 300px;
     height: 73px;
     line-height: 73px;
     text-align: center;
@@ -129,7 +130,7 @@ body {
 
 
 .quantity {
-    font-size: 70px;
+    font-size: 58px;
     color: #d52027;
     font-weight: 600;
     width: 5%;
@@ -170,7 +171,7 @@ body {
 
 .description {
     margin-top: 15px;
-    width: 61%;
+    width: 80%;
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -550,7 +551,7 @@ body {
     align-items: flex-start;
 }
 
-.col-lg-4.price-pack {
+.col-lg-12.price-pack {
     margin-right: 40px;
     margin-left: 40px;
     padding: 30px;
@@ -616,24 +617,20 @@ body {
     transition: color .5s;
 }
 
-
 .send {
-    margin-top: 79px;
+    font-size: 58px;
     color: #fff;
     font-size: 16px;
     font-weight: 400;
     background: #D52027;
     width: 100%;
+    margin-top: 38px;
     height: 73px;
     line-height: 73px;
     text-align: center;
     border: 1px solid #D52027;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.send:first-child {
-    margin-top: 52px;
 }
 
 /* **************************** */
@@ -739,7 +736,7 @@ footer {
 /* **************************** */
 /* **********Адаптив************ */
 
-@media (max-width : 480px) {
+@media (max-width : 540px) {
 
     /* ******************Шапка*******************/
     .header {
@@ -757,6 +754,10 @@ footer {
         display: block;
     }
 
+    .icons {
+        display: flex;
+    }
+
     .ico-call {
         display: flex;
         justify-content: center;
@@ -766,10 +767,6 @@ footer {
         box-shadow: white 0px -1px 4px 0px;
         border-radius: 10px;
         margin-right: 10px;
-    }
-
-    .icons {
-        display: flex;
     }
 
     .mob-menu {
@@ -873,11 +870,12 @@ footer {
         text-align: center;
         font-weight: 400;
         color: #fff;
+        margin: 0 auto;
     }
 
 
     .girl-adaptive {
-        width: 100%;
+        width: 102%;
     }
 
     .button {
@@ -948,7 +946,13 @@ footer {
         width: 94%;
     }
 
-    .fi,
+    .fi {
+        font-size: 19px;
+        margin-left: 35px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
     .profession,
     .more {
         margin-left: 35px;
@@ -1052,9 +1056,9 @@ footer {
     }
 
     .packs-title>h3 {
-        margin-top: 15px;
+        margin-top: 0;
         margin-bottom: 0;
-        font-size: 40px;
+        font-size: 32px;
         text-align: center;
     }
 
@@ -1138,4 +1142,544 @@ footer {
         margin-top: 15px;
     }
 
+}
+
+@media(min-width: 540px) and (max-width:760px) {
+    .logo {
+        width: 100%;
+        height: 22px;
+        margin: 35px 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .call-ico {
+        display: block;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .ico-call {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .mob-menu {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .mob-menu-window.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #141024;
+        z-index: 2;
+    }
+
+    .menu-mob {
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-mob a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .menu-mob li {
+        margin-bottom: 25px;
+    }
+
+    .inside-mob-window {
+        position: absolute;
+        display: flex;
+        top: 2%;
+        right: 2%;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+    }
+
+    .line {
+        position: absolute;
+        background: #fff;
+        width: 73%;
+        height: 2px;
+        top: 35%;
+        border-radius: 70%;
+    }
+
+    .line:nth-child(2) {
+        top: 48.6%;
+    }
+
+    .line:nth-child(3) {
+        width: 50%;
+        top: 62.6%;
+        left: 14%;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 990px) {
+
+    /* ******************Шапка*******************/
+    .header {
+        position: static;
+    }
+
+    .col-lg-12.price-pack {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .button {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .robo {
+        margin-top: 90px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .obzor {
+        max-width: 464px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    /* **************************** */
+    /* ******************Количество участников*******************/
+    .quan-adaptive {
+        flex-direction: row;
+        text-align: -webkit-center;
+    }
+
+    .quantity {
+        margin-bottom: 30px;
+    }
+
+    .wrapperMidle {
+        padding-bottom: 50px;
+    }
+
+    /* **************************** */
+
+    /* ******************О курсах*******************/
+    .wrapperGrey {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .title2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .names {
+        text-align: -webkit-center;
+    }
+
+    .free-place {
+        right: -50%;
+        top: -50px;
+    }
+
+    /* **************************** */
+    /* ******************Тренера*******************/
+
+    .title-coach>h3 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .wrapper-img {
+        margin: 40px;
+    }
+
+    .fi {
+        font-size: 24px;
+        margin-left: 40px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .profession,
+    .more {
+        margin-left: 40px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* **************************** */
+    /* ******************Пакеты*******************/
+
+    .row.packets-row {
+        padding: 0;
+        margin-bottom: -50px;
+    }
+
+    .packs-title>h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    /* **************************** */
+    /* ******************Форма*******************/
+
+    .form {
+        background-image: none;
+    }
+
+    .info-sale {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .date-sale {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: -50px;
+    }
+
+    .application input {
+        width: 100%;
+    }
+
+    .send-form {
+        width: 100%;
+    }
+}
+
+
+@media (min-width : 761px) and (max-width: 1100px) {
+
+    /* ******************Шапка*******************/
+    .header {
+        position: static;
+        margin-top: -15px;
+    }
+
+    .logo {
+        margin: 35px 5px;
+        width: 100%;
+        max-width: 140px;
+    }
+
+    .call-ico {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .ico-call {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .mob-menu {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .line {
+        position: absolute;
+        background: #fff;
+        width: 73%;
+        height: 2px;
+        top: 35%;
+        border-radius: 70%;
+    }
+
+    .line:nth-child(2) {
+        top: 48.6%;
+    }
+
+    .line:nth-child(3) {
+        width: 50%;
+        top: 62.6%;
+        left: 14%;
+    }
+
+    .menu {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .menu-mob {
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-mob a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .menu-mob li {
+        margin-bottom: 25px;
+    }
+
+    .mob-menu-window.active {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #141024;
+        z-index: 2;
+    }
+
+    .inside-mob-window {
+        position: absolute;
+        display: flex;
+        top: 2%;
+        right: 2%;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: #141024;
+        box-shadow: white 0px -1px 4px 0px;
+        border-radius: 10px;
+    }
+
+    .number {
+        display: block;
+        font-size: 25px;
+    }
+
+    .robo {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .obzor {
+        max-width: 464px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+        margin: 20px auto;
+    }
+
+
+    .girl-adaptive {
+        width: 102%;
+    }
+
+    .button {
+        margin: auto;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 498px;
+    }
+
+    /* **************************** */
+
+
+}
+
+@media (min-width: 993px) and (max-width: 1100px) {
+    /* *************О курсах*************** */
+
+    .description {
+        width: 100%;
+    }
+
+    /* **************************** */
+    /* *************Пакеты*************** */
+    .col-12.price-pack {
+        margin-right: 22px;
+        margin-left: 7px;
+        width: 30%;
+    }
+
+    .send:last-child {
+        margin-top: 39px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1400px) {
+
+    /* *************Шапка*************** */
+    .button {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .robo {
+        margin-top: 90px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .obzor {
+        max-width: 464px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+        margin: 0 auto;
+    }
+
+    .girl-adaptive {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .button {
+        max-width: 570px;
+    }
+
+    /* **************************** */
+    /* *************Тренера*************** */
+
+    .title-coach h3 {
+        font-size: 35px;
+    }
+
+    /* **************************** */
+    /* *************Пакеты*************** */
+
+    .packs-title h3 {
+        font-size: 35px;
+    }
+
+    .col-lg-12.price-pack {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    .send:last-child {
+        margin-top: 39px;
+    }
+
+    /* **************************** */
+    /* *************Форма*************** */
+
+    .application input {
+        width: 100%;
+    }
+
+    .send-form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .robo {
+        margin-top: 220px;
+        width: 500px;
+        font-size: 65px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .obzor {
+        max-width: 464px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 35px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: left;
+    }
+
+    .button {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        background: #D52027;
+        width: 100%;
+        max-width: 300px;
+        height: 73px;
+        line-height: 73px;
+        text-align: center;
+        border: 1px solid #D52027;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 30px;
+    }
 }
