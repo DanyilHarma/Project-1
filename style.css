@@ -102,6 +102,11 @@ body {
     cursor: pointer;
 }
 
+.button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .girl {
     width: 100%;
     margin-top: 121px;
@@ -686,7 +691,7 @@ body {
     margin-top: 7px;
     border-radius: 5px;
     font-weight: 400;
-    padding: 5px;
+    padding-left: 15px;
 }
 
 .send-form {
