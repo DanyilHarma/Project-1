@@ -31,6 +31,7 @@ body {
 
 .menu {
     list-style-type: none;
+    margin-left: 135px;
 }
 
 .mob-menu-window {
@@ -440,8 +441,6 @@ body {
 }
 
 .col-4.section {
-    width: 120px;
-    margin-right: 170px;
     color: rgba(20, 16, 36, 0.2);
     font-size: 18px;
     font-weight: 400;
@@ -562,7 +561,7 @@ body {
 }
 
 .price-pack:first-child {
-    margin-left: 0;
+    margin-left: -5px;
     margin-right: 0;
 }
 
@@ -955,7 +954,7 @@ footer {
     }
 
     .fi {
-        font-size: 19px;
+        font-size: 23px;
         margin-left: 35px;
         width: 100%;
         margin-top: 10px;
@@ -1352,19 +1351,18 @@ footer {
     }
 
     .wrapper-img {
-        margin: 40px;
+        margin: 0;
     }
 
     .fi {
-        font-size: 24px;
-        margin-left: 40px;
+        font-size: 20px;
         width: 100%;
         margin-top: 10px;
     }
 
     .profession,
     .more {
-        margin-left: 40px;
+        font-size: 13px;
         width: 100%;
         margin-top: 10px;
     }
@@ -1416,6 +1414,15 @@ footer {
 @media (min-width : 761px) and (max-width: 1100px) {
 
     /* ******************Шапка*******************/
+    .menu {
+        margin-left: 0;
+    }
+
+    .number {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+
     .header {
         position: static;
         margin-top: -15px;
@@ -1529,10 +1536,6 @@ footer {
         border-radius: 10px;
     }
 
-    .number {
-        display: block;
-        font-size: 25px;
-    }
 
     .robo {
         margin-top: 10px;
@@ -1561,7 +1564,7 @@ footer {
         margin: auto;
         margin-bottom: 30px;
         width: 100%;
-        max-width: 498px;
+        max-width: 515px;
     }
 
     /* **************************** */
@@ -1612,6 +1615,19 @@ footer {
 @media (min-width: 1100px) and (max-width: 1400px) {
 
     /* *************Шапка*************** */
+    .logo {
+        margin: 35px 10px;
+    }
+
+    .menu {
+        margin-left: 55px;
+        margin-top: 10px;
+    }
+
+    .number {
+        margin-right: 10px;
+    }
+
     .button {
         margin: auto;
         margin-bottom: 30px;
