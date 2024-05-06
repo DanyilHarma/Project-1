@@ -100,6 +100,38 @@ $(".close").click(function () {//////////закрытие окна
     setDefaultTab();
 });
 
+///////////////////////ВАЛИДАЦИЯ для формы///////////////////////////////
+
+let submit = $(".send-form").click(function (e) {
+    e.preventDefault();
+    let name = $(".name-form");
+    let tel = $(".tel-form");
+    let email = $(".email-form");
+    let nameValue = name.val();
+    let telValue = tel.val();
+    let emailValue = email.val();
+
+    if (nameValue === "") {
+        name.addClass("error");
+    }
+    if (telValue === "" || !(/^\+\d{7,}$/).test(telValue)) {
+        tel.addClass("error");
+    }
+    if (emailValue === "") {
+        email.addClass("error");
+    }
+    if (nameValue === "" || telValue === "" || !(/^\+\d{7,}$/).test(telValue) || emailValue === "") {
+        return false;
+    }
+    else {
+        name.val(""),
+            tel.val(""),
+            email.val("");
+        email.removeClass("error");
+        name.removeClass("error");
+        tel.removeClass("error");
+    }
+})
 
 
 ///////////////////////АДАПТИВ///////////////////////////////

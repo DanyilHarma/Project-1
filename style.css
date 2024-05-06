@@ -700,7 +700,8 @@ body {
     font-size: 16px;
     font-weight: 400;
     background: #141024;
-    width: 510px;
+    width: 100%;
+    max-width: 500px;
     height: 65px;
     text-align: center;
     line-height: 55px;
@@ -709,6 +710,13 @@ body {
     border-radius: 5px;
     cursor: pointer;
     padding: 5px;
+}
+
+.name-form.error,
+.tel-form.error,
+.email-form.error {
+    background: #e44040;
+    color: #fff;
 }
 
 .img-procent img {
