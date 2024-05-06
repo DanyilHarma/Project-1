@@ -121,6 +121,9 @@ let submit = $(".send-form").click(function (e) {
         email.addClass("error");
     }
     if (nameValue === "" || telValue === "" || !(/^\+\d{7,}$/).test(telValue) || emailValue === "") {
+        email.addClass("error");
+        tel.addClass("error");
+        name.addClass("error");
         return false;
     }
     else {
