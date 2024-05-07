@@ -723,6 +723,23 @@ body {
     text-align: center;
 }
 
+.error-span {
+    display: inline-block;
+    animation: slideIn .5s forwards;
+    width: 100%;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 .name-form.error,
 .tel-form.error,

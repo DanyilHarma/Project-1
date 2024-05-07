@@ -146,8 +146,14 @@ function errorMessage(element, message) {
     if (errorMessage.length > 0) {
         errorMessage.text(message);
     } else {
-        let errorMsg = $("<div class='error-message'></div>").text(message);
-        element.after(errorMsg);
+        let errorDiv = $("<div class='error-message'></div>");
+        let errorMessage = $("<span class='error-span'></span>").text(message);
+
+        errorDiv.append(errorMessage);
+
+
+        element.parent().append(errorDiv);
+        element.after(errorDiv);
     }
 }
 
