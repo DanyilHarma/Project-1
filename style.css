@@ -712,6 +712,18 @@ body {
     padding: 5px;
 }
 
+
+.error-message {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #d42026;
+    border-radius: 5px;
+    padding: 5px;
+    width: 78.5%;
+    text-align: center;
+}
+
+
 .name-form.error,
 .tel-form.error,
 .email-form.error {
@@ -1175,6 +1187,10 @@ footer {
         width: 100%;
     }
 
+    .error-message {
+        width: 100%;
+    }
+
     /* **************************************** */
 
     /* ****************Подвал*******************/
@@ -1322,7 +1338,10 @@ footer {
 
     /* **************************************** */
 
-
+    /* ****************Форма*******************/
+    .error-message {
+        width: 100%;
+    }
 }
 
 @media (min-width: 540px) and (max-width: 900px) {
@@ -1426,6 +1445,12 @@ footer {
     .exp-wrap.active,
     .award.active {
         display: block;
+    }
+
+    /* ******************Форма*******************/
+
+    .error-message {
+        width: 100%;
     }
 
 }
@@ -1572,6 +1597,10 @@ footer {
     }
 
     .send-form {
+        width: 100%;
+    }
+
+    .error-message {
         width: 100%;
     }
 }
@@ -1734,8 +1763,10 @@ footer {
     }
 
     /* **************************** */
-
-
+    /* *************Форма*********/
+    .error-message {
+        width: 100%;
+    }
 }
 
 @media (min-width: 990px) and (max-width: 1100px) {
@@ -1775,6 +1806,10 @@ footer {
 
     .price-pack:last-child .send {
         margin-top: 38px;
+    }
+
+    .error-message {
+        width: 100%;
     }
 }
 
@@ -1863,6 +1898,10 @@ footer {
     .send-form {
         width: 100%;
     }
+
+    .error-message {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -1910,5 +1949,12 @@ footer {
 
     .price-pack:last-child .send {
         margin-top: 65px;
+    }
+
+    /* **************************** */
+    /* *************Форма*************** */
+
+    .error-message {
+        width: 100%;
     }
 }

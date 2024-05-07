@@ -111,14 +111,19 @@ let submit = $(".send-form").click(function (e) {
     let telValue = tel.val();
     let emailValue = email.val();
 
+
     if (nameValue === "") {
         name.addClass("error");
+        errorMessage(name, "Введите ваше имя");
     }
     if (telValue === "" || !(/^\+\d{7,}$/).test(telValue)) {
         tel.addClass("error");
+        errorMessage(tel, "Введите ваш номер телефона,который состоит из 7 чисел");
+
     }
     if (emailValue === "") {
         email.addClass("error");
+        errorMessage(email, "Введите ваш EMAIL");
     }
     if (nameValue === "" || telValue === "" || !(/^\+\d{7,}$/).test(telValue) || emailValue === "") {
         email.addClass("error");
@@ -133,8 +138,19 @@ let submit = $(".send-form").click(function (e) {
         email.removeClass("error");
         name.removeClass("error");
         tel.removeClass("error");
+        $(".error-message").remove();
     }
 })
+function errorMessage(element, message) {
+    let errorMessage = element.next(".error-message");
+    if (errorMessage.length > 0) {
+        errorMessage.text(message);
+    } else {
+        let errorMsg = $("<div class='error-message'></div>").text(message);
+        element.after(errorMsg);
+    }
+}
+
 
 
 ///////////////////////АДАПТИВ///////////////////////////////
