@@ -113,49 +113,36 @@ let submit = $(".send-form").click(function (e) {
 
 
     if (nameValue === "") {
-        name.addClass("error");
-        errorMessage(name, "Введите ваше имя");
+        name.addClass("place_holder");
+    } else {
+        name.removeClass("place_holder");
     }
     if (telValue === "" || !(/^\+\d{7,}$/).test(telValue)) {
-        tel.addClass("error");
-        errorMessage(tel, "Введите ваш номер телефона,который состоит из 7 чисел");
-
+        tel.addClass("place_holder");
+    } else {
+        tel.removeClass("place_holder");
     }
     if (emailValue === "") {
-        email.addClass("error");
-        errorMessage(email, "Введите ваш EMAIL");
+        email.addClass("place_holder");
     }
     if (nameValue === "" || telValue === "" || !(/^\+\d{7,}$/).test(telValue) || emailValue === "") {
-        email.addClass("error");
-        tel.addClass("error");
-        name.addClass("error");
+        setTimeout(function () {
+            email.removeClass("place_holder");
+            tel.removeClass("place_holder");
+            name.removeClass("place_holder");
+        }, 1000)
         return false;
     }
     else {
         name.val(""),
             tel.val(""),
             email.val("");
-        email.removeClass("error");
-        name.removeClass("error");
-        tel.removeClass("error");
-        $(".error-message").remove();
+        email.removeClass("place_holder");
+        name.removeClass("place_holder");
+        tel.removeClass("place_holder");
     }
 })
-function errorMessage(element, message) {
-    let errorMessage = element.next(".error-message");
-    if (errorMessage.length > 0) {
-        errorMessage.text(message);
-    } else {
-        let errorDiv = $("<div class='error-message'></div>");
-        let errorMessage = $("<span class='error-span'></span>").text(message);
 
-        errorDiv.append(errorMessage);
-
-
-        element.parent().append(errorDiv);
-        element.after(errorDiv);
-    }
-}
 
 
 

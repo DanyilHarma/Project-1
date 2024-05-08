@@ -712,40 +712,34 @@ body {
     padding: 5px;
 }
 
-
-.error-message {
-    border: 1px solid #fff;
-    background-color: #fff;
-    color: #d42026;
-    border-radius: 5px;
-    padding: 5px;
-    width: 78.5%;
-    text-align: center;
+.place_holder {
+    animation-name: place_holder;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.43, 0.05, 0.3, 0.87);
+    color: red !important;
 }
 
-.error-span {
-    display: inline-block;
-    animation: slideIn .5s forwards;
-    width: 100%;
-}
+@keyframes place_holder {
 
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        text-indent: 10px;
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        text-indent: 0px;
     }
 
     100% {
-        opacity: 1;
-        transform: translateX(0);
+        text-indent: 0;
     }
-}
-
-.name-form.error,
-.tel-form.error,
-.email-form.error {
-    background: #e44040;
-    color: #fff;
 }
 
 .img-procent img {
@@ -1074,7 +1068,6 @@ footer {
         left: 0;
         width: 100%;
         height: 100px;
-        /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
         pointer-events: none;
     }
 
@@ -1114,7 +1107,7 @@ footer {
 
     .info-coach {
         display: none;
-        height: 50vh;
+        height: 36vh;
     }
 
     .education-wrapper,
@@ -1350,11 +1343,6 @@ footer {
     }
 
     /* **************************************** */
-
-    /* ****************Форма*******************/
-    .error-message {
-        width: 100%;
-    }
 }
 
 @media (min-width: 540px) and (max-width: 900px) {
@@ -1362,9 +1350,9 @@ footer {
     /* ****************Модалка*******************/
     .close-adap {
         display: block;
-        position: relative;
+        position: absolute;
         top: -25px;
-        right: -100px;
+        right: -23px;
     }
 
     .close {
@@ -1435,7 +1423,7 @@ footer {
 
     .info-coach {
         display: none;
-        height: 46vh;
+        height: 30vh;
     }
 
     .education-wrapper,
@@ -1607,6 +1595,7 @@ footer {
 
     .send-form {
         width: 100%;
+        max-width: none;
     }
 
     .error-message {
