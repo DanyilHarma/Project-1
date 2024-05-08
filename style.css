@@ -712,11 +712,16 @@ body {
     padding: 5px;
 }
 
+
 .place_holder {
     animation-name: place_holder;
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier(0.43, 0.05, 0.3, 0.87);
+    color: red !important;
+}
+
+.place_holder::placeholder {
     color: red !important;
 }
 
@@ -740,6 +745,13 @@ body {
     100% {
         text-indent: 0;
     }
+}
+
+.name-form.error,
+.tel-form.error,
+.email-form.error {
+    background: #e44040;
+    color: #fff;
 }
 
 .img-procent img {
@@ -1068,6 +1080,7 @@ footer {
         left: 0;
         width: 100%;
         height: 100px;
+        /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
         pointer-events: none;
     }
 
@@ -1107,7 +1120,7 @@ footer {
 
     .info-coach {
         display: none;
-        height: 36vh;
+        height: 50vh;
     }
 
     .education-wrapper,
@@ -1343,6 +1356,11 @@ footer {
     }
 
     /* **************************************** */
+
+    /* ****************Форма*******************/
+    .error-message {
+        width: 100%;
+    }
 }
 
 @media (min-width: 540px) and (max-width: 900px) {
@@ -1350,9 +1368,9 @@ footer {
     /* ****************Модалка*******************/
     .close-adap {
         display: block;
-        position: absolute;
+        position: relative;
         top: -25px;
-        right: -23px;
+        right: -100px;
     }
 
     .close {
@@ -1423,7 +1441,7 @@ footer {
 
     .info-coach {
         display: none;
-        height: 30vh;
+        height: 46vh;
     }
 
     .education-wrapper,
@@ -1595,7 +1613,6 @@ footer {
 
     .send-form {
         width: 100%;
-        max-width: none;
     }
 
     .error-message {
