@@ -36,7 +36,7 @@ function unblockCarousel() {
 
 ///////////Создание функции для вставки//////////
 function fillModal(image, name, profession) {
-    $(".wrapper-img-window ").attr("src", image);
+    $(".wrapper-img-window img").attr("src", image);
     $(".info-couch").text(name);
     $(".profession-individual").text(profession);
     $(".main-window").addClass("active");
@@ -49,7 +49,7 @@ $(".more").click(function (event) {////////////////смена имени,фам�
     blockCarousel();
     let name = $(this).siblings(".fi").text();
     let profession = $(this).siblings(".profession").text();
-    let image = $(this).closest(".coachs").find(".wrapper-img img").attr("src");
+    let image = $(this).closest(".coach").find(".wrapper-img img").attr("src");
     fillModal(image, name, profession);
 });
 
@@ -179,58 +179,29 @@ $(".inside-mob-window, .about, .treners, .price-menu").click(function () {
 $(".close-adap img").click(function () {
     $(".main-window").removeClass("active").fadeOut();
     $(".opacity").fadeOut();
-    $(".info-coach").removeClass("active");
-    $(".education-wrapper,.exp-wrap,.award").removeClass("active");
-    $("#expe,#awar,#ed").css("display", "block");
-    $(".small-window select").css("margin-bottom", "10px");
-    $(".main-window").css("height", "345px");
+    $(".exp-wrap,.award").removeClass("active");
+    $(".main-window").css("height", "98vh");
     unblockCarousel();
+    // setDefaultTab();
 })
 
 
 $(document).ready(function () {
-    $("#ed").click(function (e) {
-        e.preventDefault();
-        $(".education-wrapper").toggleClass("active");
-        if ($(".education-wrapper").hasClass("active")) {
-            $(".main-window.active").css("height", "100%");
-            $("#expe,#awar").css("display", "none");
-            $(".info-coach").css("height", "250px");
-            $(".small-window select").css("margin-bottom", "-12px");
-        } else {
-            $(".main-window.active").css("height", "345px");
-            $("#expe,#awar").css("display", "block");
-            $(".small-window select").css("margin-bottom", "10px");
-        }
-    });
-    $("#expe").click(function (e) {
-        e.preventDefault();
-        $(".exp-wrap").toggleClass("active");
-        if ($(".exp-wrap").hasClass("active")) {
-            $(".main-window.active").css("height", "100%");
-            $("#ed,#awar").css("display", "none");
-            $(".info-coach").css("height", "250px");
-            $(".small-window select").css("margin-bottom", "-12px");
-        } else {
-            $(".main-window.active").css("height", "345px");
-            $("#ed,#awar").css("display", "block");
-            $(".small-window select").css("margin-bottom", "10px");
-        }
-    });
-    $("#awar").click(function (e) {
-        e.preventDefault();
-        $(".award").toggleClass("active");
-        if ($(".award").hasClass("active")) {
-            $(".main-window.active").css("height", "100%");
-            $("#ed,#expe").css("display", "none");
-            $(".info-coach").css("height", "250px");
-            $(".small-window select").css("margin-bottom", "-12px");
-        } else {
-            $(".main-window.active").css("height", "345px");
-            $("#ed,#expe").css("display", "block");
-            $(".small-window select").css("margin-bottom", "10px");
-        }
-    })
-
+    if ($(window).width() < 900) {
+        $(".education-wrapper").show();
+        $(".select-info").change(function () {
+            let selectInfo = $(this).val();
+            $("." + selectInfo).show();
+            if (selectInfo === "education-wrapper") {
+                $(".exp-wrap,.award").hide();
+            }
+            if (selectInfo === "exp-wrap") {
+                $(".education-wrapper,.award").hide();
+            }
+            if (selectInfo === "award") {
+                $(".education-wrapper,.exp-wrap").hide();
+            }
+        })
+    }
 })
 

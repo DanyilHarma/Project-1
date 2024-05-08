@@ -1036,7 +1036,7 @@ footer {
     }
 
     .main-window.active {
-        height: 345px;
+        height: 98vh;
         max-height: 500px;
         position: fixed;
         top: 50%;
@@ -1093,21 +1093,17 @@ footer {
         margin-top: 20px;
     }
 
-    .small-window select option {
-        display: none;
-        border: none;
-    }
 
     .small-window select {
         width: 100%;
-        margin-right: 170px;
         color: rgba(20, 16, 36, 0.2);
         font-size: 18px;
         font-weight: 400;
         cursor: pointer;
         transition: .5s;
+        line-height: 30px;
+        height: 30px;
         color: white;
-        padding: 10px;
         text-align: center;
         background: #D52027;
     }
@@ -1118,7 +1114,7 @@ footer {
 
     .info-coach {
         display: none;
-        height: 35px;
+        height: 50vh;
     }
 
     .education-wrapper,
@@ -1376,7 +1372,7 @@ footer {
     }
 
     .main-window.active {
-        height: 345px;
+        height: 98vh;
         max-height: 500px;
         position: fixed;
         top: 50%;
@@ -1418,10 +1414,6 @@ footer {
         margin-top: 20px;
     }
 
-    .small-window select option {
-        display: none;
-        border: none;
-    }
 
     .small-window select {
         width: 100%;
@@ -1443,7 +1435,7 @@ footer {
 
     .info-coach {
         display: none;
-        height: 35px;
+        height: 46vh;
     }
 
     .education-wrapper,
