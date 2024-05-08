@@ -1120,7 +1120,7 @@ footer {
 
     .info-coach {
         display: none;
-        height: 50vh;
+        height: 36vh;
     }
 
     .education-wrapper,
@@ -1368,9 +1368,9 @@ footer {
     /* ****************Модалка*******************/
     .close-adap {
         display: block;
-        position: relative;
+        position: absolute;
         top: -25px;
-        right: -100px;
+        right: -23px;
     }
 
     .close {
@@ -1441,7 +1441,7 @@ footer {
 
     .info-coach {
         display: none;
-        height: 46vh;
+        height: 33vh;
     }
 
     .education-wrapper,
