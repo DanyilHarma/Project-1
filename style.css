@@ -1613,6 +1613,7 @@ footer {
 
     .send-form {
         width: 100%;
+        max-width: none;
     }
 
     .error-message {
@@ -1912,6 +1913,7 @@ footer {
 
     .send-form {
         width: 100%;
+        max-width: none;
     }
 
     .error-message {
